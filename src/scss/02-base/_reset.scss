@@ -5,3 +5,7 @@ html, body {
     padding: 0;
     margin: 0;
 }
+
+body {
+    border-top: 1px solid rgba($color: $secondary, $alpha: .12);
+}

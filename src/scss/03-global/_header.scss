@@ -1,5 +1,5 @@
 .header {
-    margin-bottom: 30px;
+    padding: 10px 20px;
 
     &__title {
         color: $secondary;
@@ -21,6 +21,5 @@
         height: 10px;
         display: inline-block;
         margin: 0 10px;
-        margin-right: 5px;
     }
 }
