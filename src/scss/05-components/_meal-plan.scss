@@ -22,6 +22,15 @@
     }
 
     &__body {
+        height: calc(100vh - 239px);
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__body-row {
         border-right: 1px solid rgba($color: $secondary, $alpha: .12);
         display: flex;
         margin-top: 20px;
@@ -33,5 +42,26 @@
         float: left;
         width: 14.28%;
         padding: 15px;
+
+        .meal-label {
+            color: $secondary;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .meal-time {
+            color: $secondary;
+            font-size: 14px;
+            font-weight: 300;
+            margin: 5px 0;
+        }
+
+        .meal-item {
+            color: $secondary;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
     }
 }

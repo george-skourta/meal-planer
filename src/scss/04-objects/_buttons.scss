@@ -1,0 +1,33 @@
+.primary-button {
+    background: $primary;
+    border: 1px solid $primary;
+    cursor: pointer;
+    padding: 10px;
+
+    &__text {
+        color: white;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1.25;
+        text-transform: uppercase;
+
+        &.w-icon {
+            position: relative;
+            padding-right: 25px;
+
+            i {
+                font-size: 18px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &:hover, &:focus {
+        background: rgba($color: $primary, $alpha: .9);
+        outline: 0;
+    }
+}

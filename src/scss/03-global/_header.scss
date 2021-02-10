@@ -1,11 +1,13 @@
 .header {
     padding: 10px 20px;
+    position: relative;
 
     &__title {
         color: $secondary;
         font-size: 40px;
         font-weight: 500;
         display: block;
+        margin-bottom: 10px;
     }
 
     &__text {
@@ -21,5 +23,16 @@
         height: 10px;
         display: inline-block;
         margin: 0 10px;
+    }
+
+    &__buttons {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        button {
+            margin-left: 15px;
+        }
     }
 }
