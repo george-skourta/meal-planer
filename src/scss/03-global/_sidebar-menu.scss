@@ -1,0 +1,115 @@
+.sidebar-menu {
+    border-right: 1px solid rgba($color: $secondary, $alpha: .12);
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 30px;
+    left: 0;
+
+    &__nav {
+        padding: 10px;
+    }
+
+    &__label {
+        background: $secondary;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2px 10px;
+        display: table;
+    }
+
+    &__nav-item {
+        color: $secondary;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        padding: 10px;
+        margin: 10px -10px;
+        display: block;
+        opacity: .5;
+
+        &:hover {
+            background: rgba($color: $secondary, $alpha: .05);
+            font-weight: 500;
+            opacity: 1;
+            position: relative;
+
+            &::after {
+                content: ' ';
+                background: $primary;
+                width: 5px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &--active {
+            background: rgba($color: $secondary, $alpha: .05);
+            font-weight: 500;
+            opacity: 1;
+            position: relative;
+
+            &::after {
+                content: ' ';
+                background: $primary;
+                width: 5px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            } 
+        }
+    }
+
+    &__profile {
+        padding: 10px;
+    }
+
+    &__profile-selection {
+        background: rgba($color: $secondary, $alpha: 0.12);
+        margin: 10px 0;
+        padding: 10px 0;
+        display: flex;
+        position: relative;
+    }
+
+    &__profile-thumbnail {
+        border-right: 1px solid rgba($color: $secondary, $alpha: .12);
+        float: left;
+        width: 20%;
+        padding: 0 10px;
+        position: relative;
+
+        i {
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    &__profile-info {
+        float: left;
+        width: 80%;
+        padding: 0 10px;
+    }
+
+    &__profile-name {
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+    }
+
+    &__profile-email {
+        font-size: 14px;
+        font-weight: 400;
+        display: block;
+    }
+}

@@ -8,6 +8,51 @@
     <link rel="stylesheet" href="public/css/app.min.css">
 </head>
 <body style="background: white;">
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu">
+        <!-- Sidebar Menu: Navigation -->
+        <div class="sidebar-menu__nav">
+            <span class="sidebar-menu__label">Menu</span>
+            <a href="javascript:void()" class="sidebar-menu__nav-item sidebar-menu__nav-item--active">My Plan</a>
+            <a href="javascript:void()" class="sidebar-menu__nav-item">Shopping List</a>
+            <a href="javascript:void()" class="sidebar-menu__nav-item">Recipes</a>
+        </div>
+        <!-- Sidebar Menu: Profile -->
+        <div class="sidebar-menu__profile">
+            <span class="sidebar-menu__label">Profile</span>
+            <div class="sidebar-menu__profile-selection">
+                <div class="sidebar-menu__profile-thumbnail">
+                    <i class="material-icons">face</i>
+                </div>
+                <div class="sidebar-menu__profile-info">
+                    <span class="sidebar-menu__profile-name">George Shkurta</span>
+                    <span class="sidebar-menu__profile-email">shkurageorge@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Section: My Plan -->
+        <section class="section section--active my-plan">
+            <div class="section-header">
+                <span class="section-header__title">My Plan</span>
+            </div>
+        </section>
+        <!-- Section: Shopping List -->
+        <section class="section shopping-list">
+            <div class="section-header">
+                <span class="section-header__title">Shopping List</span>
+            </div>
+        </section>
+        <!-- Section: Recipes -->
+        <section class="section recipes">
+            <div class="section-header">
+                <span class="section-header__title">Recipes</span>
+            </div>
+        </section>
+    </main>
     
 
     <!-- Renderer process logic -->
