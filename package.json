@@ -1,0 +1,23 @@
+{
+  "name": "meal-planer",
+  "version": "1.0.0",
+  "description": "Meal Planner electron application.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-skourta/meal-planer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/george-skourta/meal-planer/issues"
+  },
+  "homepage": "https://github.com/george-skourta/meal-planer#readme",
+  "devDependencies": {
+    "electron": "^11.2.3"
+  }
+}

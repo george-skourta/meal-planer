@@ -1,0 +1,37 @@
+.meal-plan {
+    
+    &__header {
+        border: 1px solid rgba($color: $secondary, $alpha: .12);
+        display: flex;
+        padding: 15px 0;
+    }
+
+    &__header-item {
+        border-right: 1px solid rgba($color: $secondary, $alpha: .12);
+        color: $secondary;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        float: left;
+        width: 14.28%;
+        padding: 0 15px;
+
+        &:last-of-type {
+            border-right: 0;
+        }
+    }
+
+    &__body {
+        border-right: 1px solid rgba($color: $secondary, $alpha: .12);
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &__body-item {
+        border: 1px solid rgba($color: $secondary, $alpha: .12);
+        border-right: 0;
+        float: left;
+        width: 14.28%;
+        padding: 15px;
+    }
+}
