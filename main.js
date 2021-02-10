@@ -1,13 +1,20 @@
 const { app, BrowserWindow } = require('electron')
+const path = require('path')
 
 function createWindow () {
+  
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    titleBarStyle: "hidden",
     webPreferences: {
+      
       nodeIntegration: true
+
     }
   })
+  
+  win.maximize();
 
   win.loadFile('index.html')
 }

@@ -19,5 +19,8 @@
   "homepage": "https://github.com/george-skourta/meal-planer#readme",
   "devDependencies": {
     "electron": "^11.2.3"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.6"
   }
 }
